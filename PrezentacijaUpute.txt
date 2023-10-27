@@ -1,0 +1,37 @@
+Pomću Vector API-ja možemo brzo računati Single instruction multiple data (SIMD) instrukcije, ukratko to 
+znači da u jednom ciklusu procesora možemo odraditi istu operaciju nad većim brojem elemenata pa samim
+time ubrzavamo izvođenje te operacije za faktor n gdje n predstavlja broj podataka koje procesor može obraditi
+u jednom ciklusu
+
+Vector API isključivo koristimo ako želimo vektorizirati neku operaciju, u suprotnom je bolje koristiti List ili array,
+iako je primjena vektorizacije ograničena, na mjestima gdje se može koristiti donosi ogromno ubrzanje 
+
+Najjednostavniji primjer je zbrajanje/množenje vektora velikih dimenzija i kao direktnu 
+posljedicu te činjenice imamo bržu obradu slika ili brže treniranje modela pri strojnom učenju
+
+
+Ako želimo raditi s vektorima potrebno je instancirati Vector<T> objekt gdje je T wrapper klasa 
+jednog od primitivnih brojevnih tipova Jave, također možemo i koristit specijalizirane klase kao npr IntVector
+
+
+OpenJDK u JEP-u navodi - 
+"Numerous domains can benefit from this explicit vector API including machine learning,
+linear algebra, cryptography, finance, and code within the JDK itself.",
+ u svakom slučaju sumnjam da ćemo u skorije vrijeme Javu koristiti u tim domenama.
+
+***Napomenuti da je VectorApi incubator feature i da je pri compile/run naredbama potrebno 
+dodati --add-modules jdk.incubator.vector***
+***Pokazati VectorApi klasu***
+
+Glavni razlozi implementacije String Templates su:
+
+Povećavanje čitljivosti i lakše sastavljanje stringova naspram trenutno postojećih opcija kao što su konkatenacija, StringBuilder i StringBuffer
+
+Zaobići postojuće sigurnosne probleme na koje nailaze drugi programski jezici sa sličnom značajkom, za primjer uzeti Cross-Site Scripting (XSS)
+
+Dopustiti izradu library-a koji će definirati posebnu sintaksu pri interpolaciji stringa, ovu stavku ću malo objasniti kad budem pokazivao primjere
+
+
+
+
+
