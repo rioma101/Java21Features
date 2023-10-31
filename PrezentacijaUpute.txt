@@ -33,5 +33,13 @@ Dopustiti izradu library-a koji će definirati posebnu sintaksu pri interpolacij
 
 
 
+Sequenced Collections:
+
+Dodana su tri nova Interface-a koja unutar Collection hijerarhije čija implementacija označava da je kolekcija poredana
+Radi se o Interface-ima SequencedCollection, SequencedSet i SequencedMap
+
+
+
+
 
 
