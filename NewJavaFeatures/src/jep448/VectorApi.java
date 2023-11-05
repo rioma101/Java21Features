@@ -1,4 +1,4 @@
-package vectorapi;
+package jep448;
 
 import jdk.incubator.vector.IntVector;
 

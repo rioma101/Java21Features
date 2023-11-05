@@ -1,4 +1,4 @@
-package upav;
+package jep440_441_443.shapes;
 
 public record Longitude(Point A, Point B) implements HasLength {
     @Override

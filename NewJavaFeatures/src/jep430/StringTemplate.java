@@ -1,4 +1,4 @@
-package stringtemplate;
+package jep430;
 
 import static java.util.FormatProcessor.FMT;
 
